@@ -1,0 +1,86 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('pedidoForm');
+    const enviarPedidoBtn = document.getElementById('enviarPedido');
+    
+    enviarPedidoBtn.addEventListener('click', function () {
+        const nome = form.nome.value;
+        const endereco = form.endereco.value;
+        const telefone = form.telefone.value;
+        const pedido = form.pedido.value;
+    
+        const mensagem = `Olá, meu nome é ${nome}. Moro no endereço ${endereco}. Caso tenha alguma dúvida sobre o pedido, meu contato é: ${telefone};
+        Meu pedido de Produtos de Limpeza é: ${pedido}.`
+            
+    
+        const numeroWhatsApp = '5549991782851';
+    
+        const linkWhatsApp = `https://api.whatsapp.com/send?phone=${5549991782851}&text=${encodeURIComponent(mensagem)}`;
+    
+        window.location.href = linkWhatsApp;
+    });
+});
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const ancorasRodape = document.querySelectorAll(".ancora-sobre-os-produtos");
+    const rodape = document.querySelector(".sobre-os-produtos");
+
+    ancorasRodape.forEach(function (ancora) {
+        ancora.addEventListener("click", function (event) {
+            event.preventDefault();
+            rodape.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const ancorasRodape = document.querySelectorAll(".ancora-parceiro-magalu");
+    const rodape = document.querySelector(".parceiro-magalu");
+
+    ancorasRodape.forEach(function (ancora) {
+        ancora.addEventListener("click", function (event) {
+            event.preventDefault();
+            rodape.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
+    
+    document.addEventListener("DOMContentLoaded", function () {
+    const ancorasRodape = document.querySelectorAll(".ancora-rodape");
+    const rodape = document.querySelector(".rodape");
+
+    ancorasRodape.forEach(function (ancora) {
+        ancora.addEventListener("click", function (event) {
+            event.preventDefault();
+            rodape.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const ancorasContainer = document.querySelectorAll(".ancora-container");
+    const container = document.querySelector(".container");
+
+    ancorasContainer.forEach(function (ancora) {
+        ancora.addEventListener("click", function (event) {
+            event.preventDefault();
+            container.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
+
+var imagens = [
+    "imagem1.jpg",
+    "imagem2.jpg",
+    "imagem3.jpg",
+    "imagem4.jpg"
+];
+
+var indiceAtual = 0;
+
+function trocarImagem() {
+    var imagem = document.getElementById("imagemTrocante");
+    imagem.src = imagens[indiceAtual]; 
+    indiceAtual = (indiceAtual + 1) % imagens.length; 
+}
+
+setInterval(trocarImagem, 3000);

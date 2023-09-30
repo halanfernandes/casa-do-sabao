@@ -4,121 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos de Limpeza</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-}
-
-header {
-    background-color: #5d00d6;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-}
-
-h1 {
-    margin: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    width: 96%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-
-.product h2 {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #12002b;
-}
-
-.product p {
-    font-size: 14px;
-}
-
-#enviarPedido {
-    background-color: #5d00d6;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.contato {
-    text-align: center;
-    padding: 10px;
-}
-
-.preco {
-    color: red;
-    font-size: 16px;
-}
-
-.nao-disponivel {
-    color: red 
-}
-
-.rodape {
-    background-color: #5d00d6;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-}
-
-.formulario_de_pedido {
-    text-align: center;
-}
-
-input[type="text"],
-input[type="tel"] {
-    width: 300px;
-    height: 20px;
-}
-
-textarea {
-    width: 300px;
-    font-family: Arial, sans-serif;
-}
-
-#formulario {
-    color: #5d00d6;
-    padding: 15px;
-}
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script"></script>
 </head>
 <body>
     <header>
-        <h1>PRODUTOS DE LIMPEZA PARA VOCÊ</h1>
-        <h2>Excelentes Produtos com Preços Especiais</h2>
+        <div class="barra-superior">
+            <div>
+                <img src="logo2.png.png" alt="logo2" width="300px" height="100px">
+            </div>
+            <nav class="menu">
+                <div class="menu-item"><strong><a href="#" class="ancora-sobre-os-produtos">Sobre os Produtos</a></strong></div>
+                <div class="menu-item"><strong><a href="#" class="ancora-container">Catálogo e Preços</a></strong></div>
+                <div class="menu-item"><strong><a href="#" class="ancora-parceiro-magalu">Parceiro Magalu</a></strong></div>
+                <div class="menu-item"><strong><a href="#" class="ancora-rodape">Contato</a></strong></div>
+            </nav>
+        </div>
     </header>
     </body>
+    <div class="abaixo-header">
+        <h1>PRODUTOS DE LIMPEZA PARA VOCÊ</h1>
+        <h2>Excelentes Produtos com Preços Especiais</h2>
+    </div>
+    <div class="sobre-os-produtos">
+        <img id="imagemTrocante" src="imagem1.jpg" alt="imagem 1" width="600px" height="400px">
+        <div class="sobre-produtos">
+            <h1 class="h1sobreProdutos">Seu amigo na hora da limpeza</h1>
+            <p id="seu-amigo">Procurando por produtos ideais para a limpeza perfeita? Nossos produtos são concentrados em sua essência, o que torna sua limpeza muito agradável em seu dia a dia. Quem não gosta de um ambiente limpo e cheiroso? Quem não gosta de sentir um bom aroma onde está? Nossos produtos são de ótima qualidade e preparados para deixar seu espaço com um perfume muito agradável além de limpo. São fórmulas artesanais de muita tradição feitas com todo amor e carinho para nossos amigos e clientes.</p>
+        </div>
+    </div>
+    <div class="formula-especial">
+        <div class="formula-concentrada">
+            <h4 class="antecede-destaque">Fórmula Especial &</h4>
+            <h1 class="destaque">CONCENTRADA</h1>
+            <p id="seu-amigo">Agregamos em nosso portfólio de produtos, fórmulas altamente concentradas, com grande teor de perfume, produzidas com menos água em sua formulação, que rendem mais no uso cotidiano de nossos amigos e clientes. Buscamos fácil aplicação almejando uma maior qualidade do resultado do produto em seu uso. As embalagens utilizadas são recicladas, apoiando a sustentabilidade e apoiando a tentativa encontrar um ponto de equilíbrio entre o desenvolvimento econômico e a preservação ambiental.</p>
+        </div>
+        <img src="formula-concentrada.jpg" alt="imagem 1" width="800px" height="480px">
+    </div>
     <div class="container">
+        <div class="chamar">
+            <h4 class="antecede-destaque">Facilidade na hora da compra</h4>
+            <h1 class="destaque">Escolha seu Produto</h1>
+        </div>
         <div class="product">
             <img src="qboa.png" alt="Água Sanitária" width="50px" height="30px">
             <h2>Água Sanitária de 5Lts</h2>
@@ -147,14 +74,14 @@ textarea {
         </div>
         <div class="product">
             <img src="desengordurante.jpeg" alt="Desengordurante Industrial de 2Lts" width="100px" height="80px">
-            <h2>Desengordurante Industrial de 2Lts</h2>
-            <p>O Desengordurante Industrial é um produto químico de limpeza, com alto poder de remoção de moléculas de gorduras das superfícies, proporcionando uma limpeza mais eficiente, sem riscar ou causar danos ao objeto. Além de realizar a limpeza, o desengordurante industrial promove segurança aos colaboradores e clientes evitando acidentes, já que a gordura pode deixar o piso liso e provocar escorregões. O desengordurante é útil para eliminar gorduras e outros resíduos oleosos em cozinhas industriais, é um item indispensável da lista de produtos de limpeza, garantindo saúde, segurança e bem estar no ambiente.</p>
-            <div class="preco"><strong>Preço: R$ </strong></div>
-        <span class="nao-disponivel"><strong>NÃO DISPONÍVEL</strong></span>
+            <h2>Desengordurante Profissional Multiuso de 5Lts</h2>
+            <p>O Desengordurante Multiuso é um produto químico de limpeza, com alto poder de remoção de moléculas de gorduras das superfícies, proporcionando uma limpeza mais eficiente, sem riscar ou causar danos ao objeto. Além de realizar a limpeza, o desengordurante multiuso promove segurança aos colaboradores e clientes evitando acidentes, já que a gordura pode deixar o piso liso e provocar escorregões. O desengordurante é útil para eliminar gorduras e outros resíduos oleosos em cozinhas industriais, é um item indispensável da lista de produtos de limpeza, garantindo saúde, segurança e bem estar no ambiente. Também pode ser utilizado tranquilamente nas residências e cozinhas não industriais, possui alta eficácia de limpeza em diversos ambientes e todos os tipos de superfície, como piso, mármore, vidro ou alumínio .</p>
+            <div class="preco"><strong>Preço: R$45,00 </strong></div>
+        <!-- <span class="nao-disponivel"><strong>NÃO DISPONÍVEL</strong></span> -->
         </div>
         <div class="product">
             <img src="desengraxante.png" alt="Desengraxante de 2Lts" width="140px" height="110px">
-            <h2>Desengraxante de 2Lts</h2>
+            <h2>Desengraxante de 5Lts</h2>
             <p>O Desengraxante é um poderoso detergente desengraxante alcalino. Muito utilizado na limpeza de pedras porosas, como por exemplo, na limpeza de calçadas externas e limpezas pesadas e locais residenciais e industrais. Excelente para remoção de manchas de óleo, graxa, barro, pisos e demais sujidades incrustadas nos mais diversos ambientes.</p>
             <div class="preco"><strong>Preço: R$ 18,00</strong></div>
         </div>
@@ -180,6 +107,12 @@ textarea {
         <div class="product">
             <img src="sabao_liquido.jpeg" alt="Sabão Líquido Lava Roupas de 2Lts" width="45px" height="40px">
             <h2>Sabão Líquido Lava Roupas de 2Lts</h2>
+            <p>Diferente do sabão em pó, que possui mais aditivos em sua composição, o sabão líquido possui água como solvente em sua composição, que também funciona como um agente diluidor, fazendo com que as sujeiras que saem da roupa sejam facilmente dissolvidas durante o ciclo de lavagem, deixando menos resíduos na máquina de lavar. Produto com aroma agradável, deixando aquele perfume gostoso em suas roupas.</p>
+            <div class="preco"><strong>Preço: R$ 18,00</strong></div>
+        </div>
+        <div class="product">
+            <img src="sabao_liquido_coco.jpeg" alt="Sabão Líquido Lava Roupas de 2Lts" width="100px" height="40px">
+            <h2>Sabão Líquido de Coco Lava Roupas de 2Lts</h2>
             <p>Diferente do sabão em pó, que possui mais aditivos em sua composição, o sabão líquido possui água como solvente em sua composição, que também funciona como um agente diluidor, fazendo com que as sujeiras que saem da roupa sejam facilmente dissolvidas durante o ciclo de lavagem, deixando menos resíduos na máquina de lavar. Produto com aroma agradável, deixando aquele perfume gostoso em suas roupas.</p>
             <div class="preco"><strong>Preço: R$ 18,00</strong></div>
         </div>
@@ -211,44 +144,42 @@ textarea {
             <label for="pedido">Pedido:</label>
             <textarea id="pedido" name="pedido" rows="4" required></textarea><br><br>
     
-            <button type="button" id="enviarPedido">Enviar Pedido</button>
+            <button type="button" id="enviarPedido">Enviar Pedido para WhatsApp</button>
         </form>
+
+    <div class="parceiro-magalu">
+        <img id="imagemMagalu" src="magalu2.jpg" alt="magalu 1" width="600px" height="400px">
+        <div class="sobre-produtos">
+            <h1 id="h1magalu">Não Encontrou o Que Você Precisa?</h1>
+            <p>A Casa do Sabão é loja parceira de uma das maiores redes de lojas de varejo do Brasil, a Magazine Luiza! Nesta loja você pode encontrar tudo o que você precisa em relação ao setor de limpeza, podendo comprar online na facildade de ter o acesso na palma da sua mão para olhar e comprar o que precisa para sua limpeza ficar ainda mais completa.</p>
+            <p>Uma loja com segurança garantida, entrega rápida, excelentes preços. Clique abaixo e seja redirecionado, navegue a vontade e escolha seus itens.</p>
+            <a href="https://www.magazinevoce.com.br/magazinecasadosabaoo/">
+                <button type="button" id="botaoMagalu">Ir Para Loja Parceira Magalu</button>
+            </a>
+        </div>    
+    </div>
     
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-        const form = document.getElementById('pedidoForm');
-        const enviarPedidoBtn = document.getElementById('enviarPedido');
-    
-        enviarPedidoBtn.addEventListener('click', function () {
-            const nome = form.nome.value;
-            const endereco = form.endereco.value;
-            const telefone = form.telefone.value;
-            const pedido = form.pedido.value;
-    
-            const mensagem = `Olá, meu nome é ${nome}. Moro no endereço ${endereco}. Caso tenha alguma dúvida sobre o pedido, meu contato é: ${telefone};
-            Meu pedido de Produtos de Limpeza é: ${pedido}.`
-            
-    
-            const numeroWhatsApp = '5549991782851';
-    
-            const linkWhatsApp = `https://api.whatsapp.com/send?phone=${5549991782851}&text=${encodeURIComponent(mensagem)}`;
-    
-            window.location.href = linkWhatsApp;
-        });
-    });
-     </script>
     </div>
     <footer>
         <div class="rodape">
-            <p>
-                Formas de pagamento aceitas: dinheiro, cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa, MasterCard e Elo), e Pix.
-            </p> 
-            <p>
-                Horário de Atendimento: de Segunda à Sexta-feira, das 13:30h às 19:00h
-            </p>
-            <p>
-                Contato: (49) 99178-2851
-            </p>
+            <div class="footer1">
+                <img src="logo2.png.png" alt="logo2" width="300px" height="100px">
+            </div>
+            <div class="footer2">
+                <p>
+                    Contato: (49) 99178-2851
+                </p>
+            </div>
+            <div class="footer3">
+                <p>
+                    Formas de pagamento: dinheiro, cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa, MasterCard e Elo), e Pix.
+                </p> 
+                <p>
+                    Horário de Atendimento: de Segunda à Sexta-feira, das 13:30h às 19:00h
+                </p>
+            </div>
+
+
         </div>
         
     </footer>
