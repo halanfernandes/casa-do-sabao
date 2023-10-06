@@ -1,216 +1,456 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-}
-
-.abaixo-header {
-    background-color: #6f00ff;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-}
-
-.barra-superior {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    background-color: #ffffff;
-    padding: 20px;
-}
-
-.menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #ffffff;
-    color: #5d00d6;
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-#seu-amigo {
-    line-height: 1.5;
-    text-align: justify;
-}
-
-.sobre-os-produtos {
-    padding: 100px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
-
-.formula-especial {
-    padding: 100px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
-
-h1 {
-    margin: 0px;
-}
-
-h4 {
-    margin: 0px;
-}
-
-.chamar {
-    margin-left: 30px;
-}
-
-.antecede-destaque {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.destaque {
-    color: #5d00d6;
-    padding-left: 40px;
-    font-size: 36px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.h1sobreProdutos {
-    color: #5d00d6;
-    font-size: 36px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.sobre-produtos {
-    margin-left: 30px;
-}
-
-.formula-concentrada {
-    margin-right: 30px;
-}
-
-.menu-item {
-    text-align: left;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.menu-item:hover {
-    background-color: #f5f5f5; 
-}
-
-.menu-item a:hover {
-    color: #5b3eff;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px #5d00d6(0, 0, 0, 0.2);
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    width: 96%;
-    box-shadow: 0px 0px 5px #5d00d6(0, 0, 0, 0.2);
-}
-
-.product img {
+img {
     max-width: 100%;
     height: auto;
 }
 
-.product h2 {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #12002b;
-}
-
-.product p {
-    font-size: 14px;
-}
-
-#enviarPedido {
-    background-color: #5d00d6;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.contato {
-    text-align: center;
-    padding: 10px;
-}
-
-.preco {
-    color: red;
-    font-size: 16px;
-}
-
-.nao-disponivel {
-    color: red 
-}
-
-.rodape {
-    background-color: #5d00d6;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-}
-
-.formulario_de_pedido {
-    text-align: center;
-}
-
-input[type="text"],
-input[type="tel"] {
-    width: 300px;
-    height: 20px;
-}
-
-textarea {
-    width: 300px;
-    font-family: Arial, sans-serif;
-}
-
-#formulario {
-    color: #5d00d6;
-    padding: 15px;
-}
-
-.parceiro-magalu {
-    padding: 50px 100px;
+.flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
 }
 
-#h1magalu {
-    color: blue;
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
-#botaoMagalu {
-    background-color: rgb(0, 41, 131);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+.title-footer {
+    font-weight: bold;
+}
+
+#pedidoForm {
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+}
+
+#pedidoForm label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.pedido-formulario {
+    max-width: 300px;
+    display: grid;
+}
+
+@media (max-width: 850px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
+    
+    .abaixo-header {
+        background-color: #6f00ff;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .barra-superior img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        color: #5d00d6;
+        padding: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #seu-amigo {
+        line-height: 1.5;
+        text-align: justify;
+    }
+    
+    .sobre-os-produtos {
+        padding: 20px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .sobre-os-produtos img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .formula-especial {
+        padding: 20px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    h1 {
+        margin: 0px;
+    }
+    
+    h4 {
+        margin: 0px;
+    }
+    
+    .chamar {
+        margin-left: 30px;
+    }
+    
+    .antecede-destaque {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .destaque {
+        color: #5d00d6;
+        padding-left: 10px;
+        font-size: 36px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        word-break: break-all;
+    }
+    
+    .h1sobreProdutos {
+        color: #5d00d6;
+        font-size: 36px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .sobre-produtos {
+        margin-left: 30px;
+    }
+    
+    .formula-concentrada {
+        margin-right: 30px;
+    }
+    
+    .menu-item {
+        text-align: left;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .menu-item:hover {
+        background-color: #f5f5f5; 
+    }
+    
+    .menu-item a:hover {
+        color: #5b3eff;
+    }
+    
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .product h2 {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #12002b;
+    }
+    
+    .product p {
+        font-size: 14px;
+    }
+    
+    #enviarPedido {
+        background-color: #5d00d6;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .contato {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .preco {
+        color: red;
+        font-size: 16px;
+    }
+    
+    .nao-disponivel {
+        color: red 
+    }
+    
+    .rodape {
+        background-color: #5d00d6;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .formulario_de_pedido {
+        text-align: center;
+    }
+    
+    #formulario {
+        color: #5d00d6;
+        padding: 15px;
+    }
+    
+    .parceiro-magalu {
+        padding: 20px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .parceiro-magalu img {
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    #h1magalu {
+        color: blue;
+    }
+    
+    #botaoMagalu {
+        background-color: rgb(0, 41, 131);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }  
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
+    
+    .abaixo-header {
+        background-color: #6f00ff;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .barra-superior {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #ffffff;
+        color: #5d00d6;
+        padding: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #seu-amigo {
+        line-height: 1.5;
+        text-align: justify;
+    }
+    
+    .sobre-os-produtos {
+        padding: 100px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .formula-especial {
+        padding: 100px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    h1 {
+        margin: 0px;
+    }
+    
+    h4 {
+        margin: 0px;
+    }
+    
+    .chamar {
+        margin-left: 30px;
+    }
+    
+    .antecede-destaque {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .destaque {
+        color: #5d00d6;
+        padding-left: 40px;
+        font-size: 36px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .h1sobreProdutos {
+        color: #5d00d6;
+        font-size: 36px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .sobre-produtos {
+        margin-left: 30px;
+    }
+    
+    .formula-concentrada {
+        margin-right: 30px;
+    }
+    
+    .menu-item {
+        text-align: left;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .menu-item:hover {
+        background-color: #f5f5f5; 
+    }
+    
+    .menu-item a:hover {
+        color: #5b3eff;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px #5d00d6(0, 0, 0, 0.2);
+    }
+    
+    .product {
+        border: 1px solid #ddd;
+        padding: 25px;
+        display: inline-block;
+        box-shadow: 0px 0px 5px #5d00d6(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .product h2 {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #12002b;
+    }
+    
+    .product p {
+        font-size: 14px;
+    }
+    
+    #enviarPedido {
+        background-color: #5d00d6;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .contato {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .preco {
+        color: red;
+        font-size: 16px;
+    }
+    
+    .nao-disponivel {
+        color: red 
+    }
+    
+    .rodape {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #5d00d6;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .formulario_de_pedido {
+        text-align: center;
+    }
+    
+    #formulario {
+        color: #5d00d6;
+        padding: 15px;
+    }
+    
+    .parceiro-magalu {
+        padding: 50px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    #h1magalu {
+        color: blue;
+    }
+    
+    #botaoMagalu {
+        background-color: rgb(0, 41, 131);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
