@@ -43,6 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const ancorasRodape = document.querySelectorAll(".ancora-chamar");
+    const rodape = document.querySelector(".chamar");
+
+    ancorasRodape.forEach(function (ancora) {
+        ancora.addEventListener("click", function (event) {
+            event.preventDefault();
+            rodape.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
     
     document.addEventListener("DOMContentLoaded", function () {
     const ancorasRodape = document.querySelectorAll(".ancora-rodape");
@@ -52,18 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ancora.addEventListener("click", function (event) {
             event.preventDefault();
             rodape.scrollIntoView({ behavior: "smooth" });
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const ancorasContainer = document.querySelectorAll(".ancora-container");
-    const container = document.querySelector(".container");
-
-    ancorasContainer.forEach(function (ancora) {
-        ancora.addEventListener("click", function (event) {
-            event.preventDefault();
-            container.scrollIntoView({ behavior: "smooth" });
         });
     });
 });

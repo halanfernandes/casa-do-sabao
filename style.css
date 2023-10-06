@@ -32,7 +32,7 @@ img {
 }
 
 .pedido-formulario {
-    max-width: 300px;
+    width: 300px;
     display: grid;
 }
 
@@ -58,6 +58,8 @@ img {
 
     .produtos {
         grid-template-columns: 1fr;
+        max-width: 90%;
+        padding: 20px;
     }
     
     .menu {
@@ -120,7 +122,7 @@ img {
     .destaque {
         color: #5d00d6;
         padding-left: 10px;
-        font-size: 36px;
+        font-size: 25px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         word-break: break-all;
     }
@@ -167,6 +169,17 @@ img {
     .product p {
         font-size: 14px;
     }
+
+    .product {
+        border: 1px solid #ddd;
+        padding: 25px;
+        display: inline-block;
+        box-shadow: 0px 0px 5px #5d00d6(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
     #enviarPedido {
         background-color: #5d00d6;
@@ -189,10 +202,7 @@ img {
     .preco {
         color: red;
         font-size: 16px;
-    }
-    
-    .nao-disponivel {
-        color: red 
+        padding-bottom: 30px;
     }
     
     .rodape {
@@ -243,7 +253,7 @@ img {
     }  
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 851px) {
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -284,7 +294,7 @@ img {
     }
     
     .sobre-os-produtos {
-        padding: 100px;
+        padding: 70px;
         padding-bottom: 50px;
         display: flex;
         justify-content: space-between;
@@ -292,7 +302,7 @@ img {
     }
     
     .formula-especial {
-        padding: 100px;
+        padding: 70px;
         padding-bottom: 50px;
         display: flex;
         justify-content: space-between;
@@ -352,7 +362,7 @@ img {
     }
     
     .container {
-        max-width: 1200px;
+        max-width: 95%;
         margin: 0 auto;
         padding: 20px;
         background-color: #fff;
