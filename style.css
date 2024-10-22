@@ -165,6 +165,10 @@ a {
     height: auto;
   }
 
+  .container-vendedores {
+    margin-top: 20px;
+  }
+
   .set_vendedores {
     display: grid;
     grid-template-columns: 1fr;
@@ -217,7 +221,6 @@ a {
   }
 
   .antecede-destaque {
-    padding-top: 20px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -412,7 +415,6 @@ a {
   }
 
   .antecede-destaque {
-    padding-top: 20px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
   }
