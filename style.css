@@ -257,12 +257,14 @@ ul { list-style: none; }
 /* --- IMAGEM DO PRODUTO --- */
 .product-img-wrap {
   position: relative;
-  height: 160px;
+  height: 140px;
   background: var(--fundo);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 /* Faixa decorativa sutil atrás da imagem, caso a imagem tenha fundo transparente */
