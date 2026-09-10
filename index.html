@@ -36,7 +36,7 @@
             <nav class="nav" id="mainNav">
                 <a href="#sobre-os-produtos" class="nav-link">Sobre</a>
                 <a href="#catalogo" class="nav-link">Catálogo</a>
-                <!-- <a href="./pontos-de-venda-produtos-limpeza.html" class="nav-link">Pontos de Venda</a> -->
+                <a href="#indique" class="nav-link">Indique um Amigo</a>
                 <a href="#rodape" class="nav-link">Contato</a>
             </nav>
         </div>
@@ -47,7 +47,7 @@
         <div class="hero-content">
             <p class="hero-tag">Marcas selecionadas &amp; atendimento de excelência</p>
             <h1 class="hero-title">Limpeza que você<br>sente a diferença</h1>
-            <p class="hero-sub">Produtos de qualidade com preços especiais, direto para sua casa.</p>
+            <p class="hero-sub">Seja para residência, um pequeno comércio ou uma grande empresa, nosso objetivo é entregar soluções para você.</p>
             <a href="#catalogo" class="btn-hero">Ver Catálogo</a>
         </div>
     </section>
@@ -59,8 +59,8 @@
         </div>
         <div class="sobre-texto">
             <span class="section-tag">Quem somos</span>
-            <h2>Seu parceiro na hora da limpeza</h2>
-            <p>Procurando os melhores produtos para uma limpeza perfeita? Na Casa do Sabão você encontra marcas selecionadas com qualidade comprovada, tudo com um atendimento próximo e de confiança. Trabalhamos com marcas especiais e estamos sempre ampliando nosso catálogo para atender ainda melhor você, sua família ou seu negócio.</p>
+            <h2>Soluções completas em higiene e limpeza</h2>
+            <p>Procurando os melhores produtos para uma limpeza perfeita? A Casa do Sabão fornece produtos de higiene e limpeza para residências, empresas, condomínios, restaurantes, clínicas, escolas e indústrias. Mais do que vender produtos, buscamos ser um parceiro para nossos clientes. Oferecemos um portfólio completo para atender as necessidades de higiene e limpeza, com produtos de qualidade, preços competitivos, atendimento personalizado e foco em relações de longo prazo que gerem economia, praticidade e confiança.Produtos de qualidade com preços especiais, direto para sua casa ou negócio.</p>
         </div>
     </section>
 
@@ -68,7 +68,7 @@
         <div class="formula-texto">
             <span class="section-tag">Diferencial</span>
             <h2>Marcas Especiais &amp; Atendimento de Qualidade</h2>
-            <p>Selecionamos marcas com alto desempenho, fórmulas concentradas e ótimo custo-benefício. Nosso compromisso é oferecer produtos que realmente entregam resultado, com um atendimento personalizado e ágil — porque acreditamos que a experiência de compra faz toda a diferença.</p>
+            <p>Selecionamos marcas especiais com alto desempenho, fórmulas concentradas e ótimo custo-benefício. Nosso compromisso é oferecer produtos que realmente entregam resultado, com um atendimento personalizado e ágil, porque acreditamos que a experiência de compra faz toda a diferença. Estamos sempre ampliando nosso catálogo para atender ainda melhor você, sua família ou seu negócio.</p>
         </div>
         <div class="formula-img">
             <img src="./imagens/formula-concentrada.jpg" alt="Marcas de Qualidade">
@@ -87,6 +87,18 @@
             <div class="aviso-marcas">
                 <i class="fas fa-info-circle"></i>
                 <span>Você não precisa sair de casa. Faça seu pedido e receba no conforto do seu lar ou da sua empresa, com ENTREGA GRÁTIS!</span>
+            </div>
+
+            <!-- BUSCA DE PRODUTOS -->
+            <div class="busca-produtos">
+                <div class="busca-input-wrap">
+                    <i class="fas fa-search busca-icone"></i>
+                    <input type="text" id="buscaProduto" placeholder="Buscar produto (ex: amaciante, água sanitária...)" autocomplete="off">
+                    <button id="limparBusca" class="busca-limpar" style="display:none;" aria-label="Limpar busca">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p id="buscaResultado" class="busca-resultado"></p>
             </div>
 
             <div id="produtosGrid">
@@ -720,6 +732,23 @@
                                     </div>
                                 </div>
 
+                                <div class="product-card" data-produto="Piso Maxx SAO PAULO 5Lts">
+                                    <div class="product-info">
+                                        <span class="badge-marca">SAO PAULO</span>
+                                        <h3>Piso Maxx SÃO PAULO</h3>
+                                        <span class="product-vol">5 Litros</span>
+                                        <p>Limpa pisos potente que remove sujidades resistentes, como marcas de barro, ferrugem e manchas difíceis, deixando o piso limpo e com brilho.</p>
+                                        <div class="product-footer">
+                                            <span class="preco">R$ 49,90</span>
+                                            <div class="qty-control">
+                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                <span class="qty-val">0</span>
+                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="product-card" data-produto="Sabonete Líquido SAO PAULO 5Lts">
                                     <div class="product-info">
                                         <span class="badge-marca">SAO PAULO</span>
@@ -902,7 +931,7 @@
                                         <h3>Amaciante ATTIVO</h3>
                                         <span class="product-vol">5 Litros</span>
                                         <p>Deixa as roupas macias e com fragrância duradoura. Suaviza os tecidos, reduz a eletricidade estática e facilita a hora de passar.</p>
-                                        <p class="fragrancia"><strong>Fragrância:</strong> Confortex, Dovoar, Ternura</p>
+                                        <p class="fragrancia"><strong>Fragrância:</strong> Confortex, Ternura</p>
                                         <div class="product-footer">
                                             <span class="preco">R$ 25,90</span>
                                             <div class="qty-control">
@@ -920,6 +949,7 @@
                                         <h3>Amaciante Premium Concentrado ATTIVO</h3>
                                         <span class="product-vol">5 Litros</span>
                                         <p>Fórmula concentrada premium com perfume de longa duração. Alto rendimento por dose, deixa os tecidos ultramacios lavagem após lavagem.</p>
+                                        <p class="fragrancia"><strong>Fragrância:</strong> Premium, Rosas e Sedução</p>
                                         <div class="product-footer">
                                             <span class="preco">R$ 39,90</span>
                                             <div class="qty-control">
@@ -937,7 +967,7 @@
                                         <h3>Sabão Líquido ATTIVO</h3>
                                         <span class="product-vol">5 Litros</span>
                                         <p>Sabão líquido para lava-roupas à máquina ou à mão. Remove manchas com eficiência e cuida das fibras das roupas lavagem após lavagem.</p>
-                                        <p class="fragrancia"><strong>Fragrância:</strong> Álcool, Coco, Tradicional</p>
+                                        <p class="fragrancia"><strong>Fragrância:</strong> Álcool com Bicarbonato, Coco, Tradicional</p>
                                         <div class="product-footer">
                                             <span class="preco">R$ 39,90</span>
                                             <div class="qty-control">
@@ -1016,7 +1046,7 @@
                                         <span class="product-vol">1 Kg</span>
                                         <p>Alvejante em pó de origem natural. Remove manchas difíceis, elimina odores e clareia tecidos sem danificar as fibras.</p>
                                         <div class="product-footer">
-                                            <span class="preco">R$ 35,90</span>
+                                            <span class="preco">R$ 37,90</span>
                                             <div class="qty-control">
                                                 <button class="qty-btn minus" aria-label="Diminuir">−</button>
                                                 <span class="qty-val">0</span>
@@ -1144,9 +1174,9 @@
                                         <span class="badge-marca">SAO PAULO</span>
                                         <h3>Sabão Líquido SÃO PAULO</h3>
                                         <span class="product-vol">5 Litros</span>
-                                        <p>Sabão líquido para lava-roupas à máquina ou à mão. Dissolve sujeiras, remove manchas e deixa as peças perfumadas e conservadas.</p>
+                                        <p>Sabão líquido com bicarbonato para lava-roupas à máquina ou à mão. Dissolve sujeiras, remove manchas e deixa as peças perfumadas e conservadas.</p>
                                         <div class="product-footer">
-                                            <span class="preco">R$ 44,90</span>
+                                            <span class="preco">R$ 43,90</span>
                                             <div class="qty-control">
                                                 <button class="qty-btn minus" aria-label="Diminuir">−</button>
                                                 <span class="qty-val">0</span>
@@ -1156,14 +1186,14 @@
                                     </div>
                                 </div>
 
-                                <div class="product-card" data-produto="Tira Manchas Kraft SAO PAULO 1Kg">
+                                <div class="product-card" data-produto="Percabonato de Sódio Kraft SAO PAULO 1Kg">
                                     <div class="product-info">
                                         <span class="badge-marca">SAO PAULO</span>
-                                        <h3>Tira Manchas Kraft SÃO PAULO</h3>
+                                        <h3>Percabonato de Sódio Kraft SÃO PAULO</h3>
                                         <span class="product-vol">1 Kg</span>
                                         <p>Remove manchas difíceis de roupas brancas e coloridas. Ação poderosa em manchas de suor, barro, alimentos e outros resíduos orgânicos.</p>
                                         <div class="product-footer">
-                                            <span class="preco">R$ 37,90</span>
+                                            <span class="preco">R$ 36,90</span>
                                             <div class="qty-control">
                                                 <button class="qty-btn minus" aria-label="Diminuir">−</button>
                                                 <span class="qty-val">0</span>
@@ -2204,15 +2234,246 @@
                     </div>
                 </div><!-- /cat-aromatizantes -->
 
+                <template id="cat-papeis-desativado">
+                    <!-- ════════════════════════════════════════════
+             🧻 CATEGORIA: PAPÉIS
+        ════════════════════════════════════════════ -->
+                    <div class="acc-categoria" id="cat-papeis">
+                        <button class="acc-categoria-btn" onclick="toggleCategoria('cat-papeis')">
+                            <span class="btn-esquerda">
+                                <i class="fas fa-toilet-paper icone-cat"></i>
+                                🧻 Papéis
+                            </span>
+                            <i class="fas fa-chevron-down seta"></i>
+                        </button>
+                        <div class="acc-categoria-body">
+
+                            <div class="sub-abas" id="subabas-papeis">
+                                <button class="sub-aba-btn ativa" onclick="trocarSubAba('papeis','higienico',this)"><i class="fas fa-toilet-paper"></i> HIGIÊNICO</button>
+                                <button class="sub-aba-btn" onclick="trocarSubAba('papeis','toalha',this)"><i class="fas fa-scroll"></i> TOALHA</button>
+                                <button class="sub-aba-btn" onclick="trocarSubAba('papeis','guardanapo',this)"><i class="fas fa-square"></i> GUARDANAPO</button>
+                            </div>
+
+                            <!-- HIGIÊNICO -->
+                            <div class="sub-aba-painel ativa" id="painel-papeis-higienico">
+                                <div class="produtos-grid">
+
+                                    <div class="product-card" data-produto="Papel Higiênico Branco Rolão">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Branco Rolão</h3>
+                                            <span class="product-vol">8 x 300m</span>
+                                            <p>Papel higiênico rolão branco, ideal para uso em empresas, banheiros comerciais e de alto fluxo. Ótimo custo-benefício.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 63,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Luxo Rolão 8x300m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Luxo Rolão</h3>
+                                            <span class="product-vol">8 x 300m</span>
+                                            <p>Papel higiênico rolão linha luxo, mais macio e resistente. Indicado para ambientes que buscam maior conforto ao usuário.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 83,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Folha Simples 12x30m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Folha Simples</h3>
+                                            <span class="product-vol">12 x 30m</span>
+                                            <p>Papel higiênico folha simples em fardo compacto, prático para reposição em banheiros de menor circulação.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 13,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Folha Simples 16x30m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Folha Simples</h3>
+                                            <span class="product-vol">16 x 30m</span>
+                                            <p>Papel higiênico folha simples com maior rendimento no pacote, tendo 16 rolos, reduzindo a frequência de compra para reposição de estoque do cliente.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">Indisponível</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Folha Dupla 16x30m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Folha Dupla</h3>
+                                            <span class="product-vol">16 x 30m</span>
+                                            <p>Papel higiênico folha dupla, mais macio e absorvente, oferecendo maior conforto no dia a dia. Pacote com 16 rolos de papel higiênico.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">Indisponível</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- /papeis higienico -->
+
+                            <!-- TOALHA -->
+                            <div class="sub-aba-painel" id="painel-papeis-toalha">
+                                <div class="produtos-grid">
+
+                                    <div class="product-card" data-produto="Papel Toalha Folha Simples Rolão 6x200m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Folha Simples Rolão</h3>
+                                            <span class="product-vol">6 x 200m</span>
+                                            <p>Papel toalha em rolão folha simples, ideal para cozinhas industriais, banheiros e áreas de grande circulação.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 77,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Toalha Luxo - Folha Autocortante Rolão 6x200m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Luxo - Folha Autocortante Rolão</h3>
+                                            <span class="product-vol">6 x 200m</span>
+                                            <p>Papel toalha com qualidade superior em rolão com folha autocortante, gera mais economia por ter as folhas marcadas, ideal para cozinhas industriais, banheiros e áreas de grande circulação.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 157,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Toalha Interfolha Comum 5x1000">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Interfolhado Comum</h3>
+                                            <span class="product-vol">5 pacotes x 1000 folhas</span>
+                                            <p>Papel toalha interfolhado linha comum, prático para dispensers, com boa absorção e custo-benefício.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 61,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Toalha Interfolha Luxo 5x1000">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Interfolhado Luxo</h3>
+                                            <span class="product-vol">5 pacotes x 1000 folhas</span>
+                                            <p>Papel toalha interfolhado linha luxo, mais resistente e macio, indicado para ambientes que exigem maior padrão.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 91,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- /papeis toalha -->
+
+                            <!-- GUARDANAPO -->
+                            <div class="sub-aba-painel" id="painel-papeis-guardanapo">
+                                <div class="produtos-grid">
+
+                                    <div class="product-card" data-produto="Guardanapo de Papel 6000 folhas 10x20cm">
+                                        <div class="product-info">
+                                            <span class="badge-marca">GUARDANAPO</span>
+                                            <h3>Guardanapo de Papel</h3>
+                                            <span class="product-vol">6000 folhas (10cm x 20cm)</span>
+                                            <p>Guardanapo de papel em pacote econômico, tamanho padrão, popular guardanapo de papel caicai. Ideal para restaurantes, lanchonetes e eventos. Necessita dispenser porta guardanapos.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 87,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Guardanapo de Papel 2000 folhas 14x14cm">
+                                        <div class="product-info">
+                                            <span class="badge-marca">GUARDANAPO</span>
+                                            <h3>Guardanapo de Papel</h3>
+                                            <span class="product-vol">2000 folhas (14cm x 14cm)</span>
+                                            <p>Guardanapo de papel formato quadrado, prático para mesas de refeição em restaurantes, lanchonetes e uso corporativo em geral. Necessita dispenser porta guardanapos.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 71,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- /papeis guardanapo -->
+
+                        </div>
+                    </div><!-- /cat-papeis -->
+                </template>
 
                 <!-- ════════════════════════════════════════════
-             🧻 CATEGORIA: PAPÉIS E UTENSILIOS (EM BREVE)
+             🧹 CATEGORIA: UTENSÍLIOS (EM BREVE)
         ════════════════════════════════════════════ -->
-                <div class="acc-categoria" id="cat-papeis">
-                    <button class="acc-categoria-btn" onclick="toggleCategoria('cat-papeis')">
+                <div class="acc-categoria" id="cat-utensilios">
+                    <button class="acc-categoria-btn" onclick="toggleCategoria('cat-utensilios')">
                         <span class="btn-esquerda">
-                            <i class="fas fa-toilet-paper icone-cat"></i>
-                            🧻 Papéis e Utensílios
+                            <i class="fas fa-broom icone-cat"></i>
+                            🧹 Utensílios
                         </span>
                         <i class="fas fa-chevron-down seta"></i>
                     </button>
@@ -2220,10 +2481,10 @@
                         <div class="em-breve-box">
                             <i class="fas fa-clock"></i>
                             <h4>Em Breve!</h4>
-                            <p>Estamos preparando utensílios, papel toalha e papel higiênico para empresas. Fique de olho — em breve disponível aqui!</p>
+                            <p>Estamos preparando vassouras, rodos, mops e utensílios de limpeza para empresas. Fique de olho — em breve disponível aqui!</p>
                         </div>
                     </div>
-                </div><!-- /cat-papeis -->
+                </div><!-- /cat-utensilios -->
 
             </div><!-- /produtosGrid -->
 
@@ -2254,28 +2515,35 @@
                         <label for="obsHome">Observações (fragrância, etc.)</label>
                         <textarea id="obsHome" rows="3" placeholder="Ex: Amaciante fragrância Downy, Desinfetante Lavanda..."></textarea>
                     </div>
+                    <div class="form-group full">
+                        <label for="indicadoPor">Quem te indicou a Casa do Sabão? (opcional)</label>
+                        <input type="text" id="indicadoPor" name="indicadoPor" placeholder="Nome ou WhatsApp de quem indicou">
+                    </div>
                 </div>
                 <button class="btn-whatsapp" id="enviarPedidoHome">
                     <i class="fab fa-whatsapp"></i> Enviar Pedido pelo WhatsApp
                 </button>
                 <p class="form-aviso" id="avisoHome"></p>
             </div>
+        </div>
 
         </div>
     </section>
 
-    <!-- PARCEIROS -->
-    <!-- <section class="parceiros container">
-        <div class="parceiro-card reverse">
-            <img src="./imagens/reg_curitibanos.jpg" alt="Região de Curitibanos">
-            <div class="parceiro-texto">
-                <span class="section-tag">Próximo de Você</span>
-                <h2>Vendedores na sua cidade</h2>
-                <p>Temos vendedores em diversas cidades da região. Encontre o vendedor mais perto de você e faça seu pedido com facilidade.</p>
-                <a href="./pontos-de-venda-produtos-limpeza.html" class="btn-parceiro">Conhecer Vendedores</a>
-            </div>
+    <section class="indique container" id="indique">
+        <span class="section-tag">Ajude a Casa do Sabão a crescer</span>
+        <h2>Gostou dos nossos produtos? Indique para alguém ❤️</h2>
+        <p>Envie o link da Casa do Sabão para um amigo, familiar ou empresa que também possa precisar.</p>
+        <div class="indique-botoes">
+            <a href="https://wa.me/?text=Oi!%20Conheci%20a%20Casa%20do%20Sab%C3%A3o%20e%20super%20indico%20os%20produtos%20de%20limpeza%20deles.%20D%C3%A1%20uma%20olhada%3A%20https%3A%2F%2Fhalanfernandes.github.io%2Fcasa-do-sabao%2F" target="_blank" class="btn-indicar">
+                📲 Indicar pelo WhatsApp
+            </a>
+            <button type="button" class="btn-copiar" onclick="copiarLinkIndicacao()">
+                📋 Copiar link
+            </button>
         </div>
-    </section> -->
+        <span id="copia-feedback" class="copia-feedback" style="display:none;">Link copiado! ✅</span>
+    </section>
 
     <!-- FOOTER -->
     <footer id="rodape" class="footer">
@@ -2291,12 +2559,23 @@
                     <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" width="20" height="20">
                     (49) 93380-2250 — Elen
                 </a>
+                <a class="footer-whats" href="mailto:kefempreendimentos@gmail.com?subject=Pedido de Produtos de Limpeza">
+                    <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="E-mail" width="20" height="20">
+                    kefempreendimentos@gmail.com
+                </a>
             </div>
             <div class="footer-col">
                 <p class="footer-label">Formas de Pagamento</p>
-                <p>Dinheiro, cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito e Pix.</p>
-                <p class="footer-label">Horário de Atendimento</p>
+                <p>Dinheiro, cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito e Pix. Boleto bancário disponível sob consulta.</p>
+                <p class="footer-label">
+                    Horário de Atendimento
+                    <span id="statusLoja" class="status-loja">
+                        <span class="status-bolinha"></span>
+                        <span class="status-texto">Carregando...</span>
+                    </span>
+                </p>
                 <p>Segunda a Sexta-feira, das 13h30 às 19h00</p>
+                <p>Sábado das 08h30 às 12h00</p>
             </div>
         </div>
     </footer>
