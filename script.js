@@ -19,6 +19,7 @@ const NUMERO_CENTRAL = "5549991782851"; // todos os pedidos caem aqui
 const VENDEDORES = {
   loja: { nome: "Casa do Sabão (Loja)", whatsapp: NUMERO_CENTRAL },
   arthur: { nome: "Arthur", whatsapp: NUMERO_CENTRAL },
+  gisele: { nome: "Gisele", whatsapp: NUMERO_CENTRAL },
   // adicione novos vendedores aqui, exemplo:
   // joao: { nome: "João", whatsapp: NUMERO_CENTRAL },
 };
@@ -158,7 +159,14 @@ function inicializarCarrinho() {
 
 // ── MONTA A MENSAGEM DO WHATSAPP + DADOS DO PEDIDO ──
 // vendedorInfo: { nome, whatsapp } — de onde veio a venda
-function montarMensagem(nome, telefone, endereco, obs, vendedorInfo) {
+function montarMensagem(
+  nome,
+  telefone,
+  endereco,
+  obs,
+  vendedorInfo,
+  indicadoPor,
+) {
   const itensDetalhados = Object.entries(carrinho)
     .filter(([, { qty }]) => qty > 0)
     .map(([nomeProd, { qty, preco }]) => ({
@@ -188,6 +196,8 @@ function montarMensagem(nome, telefone, endereco, obs, vendedorInfo) {
   msg += `*Endereço:* ${endereco}\n`;
   msg += `*Telefone:* ${telefone}\n`;
   if (obs && obs.trim()) msg += `*Observações:* ${obs}\n`;
+  if (indicadoPor && indicadoPor.trim())
+    msg += `*Indicado por:* ${indicadoPor}\n`;
   msg += `\n*Pedido:*\n${itensTexto}`;
   msg += `\n\n*Total:* R$ ${total.toFixed(2).replace(".", ",")}`;
 
@@ -225,7 +235,8 @@ function initFormHome() {
     const telefone = document.getElementById("telefoneHome")?.value.trim();
     const endereco = document.getElementById("enderecoHome")?.value.trim();
     const obs = document.getElementById("obsHome")?.value.trim();
-    const indicadoPor = document.getElementById("indicadoPor")?.value.trim() || "";
+    const indicadoPor =
+      document.getElementById("indicadoPor")?.value.trim() || "";
 
     if (!nome || !telefone || !endereco) {
       if (aviso)
@@ -234,7 +245,14 @@ function initFormHome() {
     }
 
     const vendedor = pegarVendedorAtual();
-    const result = montarMensagem(nome, telefone, endereco, obs, vendedor);
+    const result = montarMensagem(
+      nome,
+      telefone,
+      endereco,
+      obs,
+      vendedor,
+      indicadoPor,
+    );
 
     if (!result) {
       if (aviso)
@@ -465,11 +483,17 @@ setInterval(verificarStatusLoja, 60000);
 // ════════════════════════════════════════════
 function copiarLinkIndicacao() {
   const link = "https://halanfernandes.github.io/casa-do-sabao/"; // trocar pelo domínio quando comprar
-  navigator.clipboard.writeText(link).then(() => {
-    const feedback = document.getElementById('copia-feedback');
-    feedback.style.display = 'inline';
-    setTimeout(() => feedback.style.display = 'none', 2000);
-  }).catch(() => {
-    alert('Não foi possível copiar o link automaticamente. Copie manualmente: ' + link);
-  });
+  navigator.clipboard
+    .writeText(link)
+    .then(() => {
+      const feedback = document.getElementById("copia-feedback");
+      feedback.style.display = "inline";
+      setTimeout(() => (feedback.style.display = "none"), 2000);
+    })
+    .catch(() => {
+      alert(
+        "Não foi possível copiar o link automaticamente. Copie manualmente: " +
+          link,
+      );
+    });
 }
