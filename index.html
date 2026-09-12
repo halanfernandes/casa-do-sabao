@@ -2234,237 +2234,237 @@
                     </div>
                 </div><!-- /cat-aromatizantes -->
 
-
-                <!-- ════════════════════════════════════════════
+                <template id="cat-papeis-desativado">
+                    <!-- ════════════════════════════════════════════
              🧻 CATEGORIA: PAPÉIS
         ════════════════════════════════════════════ -->
-                <div class="acc-categoria" id="cat-papeis">
-                    <button class="acc-categoria-btn" onclick="toggleCategoria('cat-papeis')">
-                        <span class="btn-esquerda">
-                            <i class="fas fa-toilet-paper icone-cat"></i>
-                            🧻 Papéis
-                        </span>
-                        <i class="fas fa-chevron-down seta"></i>
-                    </button>
-                    <div class="acc-categoria-body">
+                    <div class="acc-categoria" id="cat-papeis">
+                        <button class="acc-categoria-btn" onclick="toggleCategoria('cat-papeis')">
+                            <span class="btn-esquerda">
+                                <i class="fas fa-toilet-paper icone-cat"></i>
+                                🧻 Papéis
+                            </span>
+                            <i class="fas fa-chevron-down seta"></i>
+                        </button>
+                        <div class="acc-categoria-body">
 
-                        <div class="sub-abas" id="subabas-papeis">
-                            <button class="sub-aba-btn ativa" onclick="trocarSubAba('papeis','higienico',this)"><i class="fas fa-toilet-paper"></i> HIGIÊNICO</button>
-                            <button class="sub-aba-btn" onclick="trocarSubAba('papeis','toalha',this)"><i class="fas fa-scroll"></i> TOALHA</button>
-                            <button class="sub-aba-btn" onclick="trocarSubAba('papeis','guardanapo',this)"><i class="fas fa-square"></i> GUARDANAPO</button>
+                            <div class="sub-abas" id="subabas-papeis">
+                                <button class="sub-aba-btn ativa" onclick="trocarSubAba('papeis','higienico',this)"><i class="fas fa-toilet-paper"></i> HIGIÊNICO</button>
+                                <button class="sub-aba-btn" onclick="trocarSubAba('papeis','toalha',this)"><i class="fas fa-scroll"></i> TOALHA</button>
+                                <button class="sub-aba-btn" onclick="trocarSubAba('papeis','guardanapo',this)"><i class="fas fa-square"></i> GUARDANAPO</button>
+                            </div>
+
+                            <!-- HIGIÊNICO -->
+                            <div class="sub-aba-painel ativa" id="painel-papeis-higienico">
+                                <div class="produtos-grid">
+
+                                    <div class="product-card" data-produto="Papel Higiênico Branco Rolão">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Branco Rolão</h3>
+                                            <span class="product-vol">8 x 300m</span>
+                                            <p>Papel higiênico rolão branco, ideal para uso em empresas, banheiros comerciais e de alto fluxo. Ótimo custo-benefício.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 63,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Luxo Rolão 8x300m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Luxo Rolão</h3>
+                                            <span class="product-vol">8 x 300m</span>
+                                            <p>Papel higiênico rolão linha luxo, mais macio e resistente. Indicado para ambientes que buscam maior conforto ao usuário.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 83,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Folha Simples 12x30m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Folha Simples</h3>
+                                            <span class="product-vol">12 x 30m</span>
+                                            <p>Papel higiênico folha simples em fardo compacto, prático para reposição em banheiros de menor circulação.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 13,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Folha Simples 16x30m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Folha Simples</h3>
+                                            <span class="product-vol">16 x 30m</span>
+                                            <p>Papel higiênico folha simples com maior rendimento no pacote, tendo 16 rolos, reduzindo a frequência de compra para reposição de estoque do cliente.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">Indisponível</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Higiênico Folha Dupla 16x30m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">HIGIÊNICO</span>
+                                            <h3>Papel Higiênico Folha Dupla</h3>
+                                            <span class="product-vol">16 x 30m</span>
+                                            <p>Papel higiênico folha dupla, mais macio e absorvente, oferecendo maior conforto no dia a dia. Pacote com 16 rolos de papel higiênico.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">Indisponível</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- /papeis higienico -->
+
+                            <!-- TOALHA -->
+                            <div class="sub-aba-painel" id="painel-papeis-toalha">
+                                <div class="produtos-grid">
+
+                                    <div class="product-card" data-produto="Papel Toalha Folha Simples Rolão 6x200m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Folha Simples Rolão</h3>
+                                            <span class="product-vol">6 x 200m</span>
+                                            <p>Papel toalha em rolão folha simples, ideal para cozinhas industriais, banheiros e áreas de grande circulação.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 77,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Toalha Luxo - Folha Autocortante Rolão 6x200m">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Luxo - Folha Autocortante Rolão</h3>
+                                            <span class="product-vol">6 x 200m</span>
+                                            <p>Papel toalha com qualidade superior em rolão com folha autocortante, gera mais economia por ter as folhas marcadas, ideal para cozinhas industriais, banheiros e áreas de grande circulação.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 157,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Toalha Interfolha Comum 5x1000">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Interfolhado Comum</h3>
+                                            <span class="product-vol">5 pacotes x 1000 folhas</span>
+                                            <p>Papel toalha interfolhado linha comum, prático para dispensers, com boa absorção e custo-benefício.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 61,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Papel Toalha Interfolha Luxo 5x1000">
+                                        <div class="product-info">
+                                            <span class="badge-marca">TOALHA</span>
+                                            <h3>Papel Toalha Interfolhado Luxo</h3>
+                                            <span class="product-vol">5 pacotes x 1000 folhas</span>
+                                            <p>Papel toalha interfolhado linha luxo, mais resistente e macio, indicado para ambientes que exigem maior padrão.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 91,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- /papeis toalha -->
+
+                            <!-- GUARDANAPO -->
+                            <div class="sub-aba-painel" id="painel-papeis-guardanapo">
+                                <div class="produtos-grid">
+
+                                    <div class="product-card" data-produto="Guardanapo de Papel 6000 folhas 10x20cm">
+                                        <div class="product-info">
+                                            <span class="badge-marca">GUARDANAPO</span>
+                                            <h3>Guardanapo de Papel</h3>
+                                            <span class="product-vol">6000 folhas (10cm x 20cm)</span>
+                                            <p>Guardanapo de papel em pacote econômico, tamanho padrão, popular guardanapo de papel caicai. Ideal para restaurantes, lanchonetes e eventos. Necessita dispenser porta guardanapos.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 87,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-card" data-produto="Guardanapo de Papel 2000 folhas 14x14cm">
+                                        <div class="product-info">
+                                            <span class="badge-marca">GUARDANAPO</span>
+                                            <h3>Guardanapo de Papel</h3>
+                                            <span class="product-vol">2000 folhas (14cm x 14cm)</span>
+                                            <p>Guardanapo de papel formato quadrado, prático para mesas de refeição em restaurantes, lanchonetes e uso corporativo em geral. Necessita dispenser porta guardanapos.</p>
+                                            <div class="product-footer">
+                                                <span class="preco">R$ 71,90</span>
+                                                <div class="qty-control">
+                                                    <button class="qty-btn minus" aria-label="Diminuir">−</button>
+                                                    <span class="qty-val">0</span>
+                                                    <button class="qty-btn plus" aria-label="Aumentar">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- /papeis guardanapo -->
+
                         </div>
-
-                        <!-- HIGIÊNICO -->
-                        <div class="sub-aba-painel ativa" id="painel-papeis-higienico">
-                            <div class="produtos-grid">
-
-                                <div class="product-card" data-produto="Papel Higiênico Branco Rolão">
-                                    <div class="product-info">
-                                        <span class="badge-marca">HIGIÊNICO</span>
-                                        <h3>Papel Higiênico Branco Rolão</h3>
-                                        <span class="product-vol">8 x 300m</span>
-                                        <p>Papel higiênico rolão branco, ideal para uso em empresas, banheiros comerciais e de alto fluxo. Ótimo custo-benefício.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 63,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Papel Higiênico Luxo Rolão 8x300m">
-                                    <div class="product-info">
-                                        <span class="badge-marca">HIGIÊNICO</span>
-                                        <h3>Papel Higiênico Luxo Rolão</h3>
-                                        <span class="product-vol">8 x 300m</span>
-                                        <p>Papel higiênico rolão linha luxo, mais macio e resistente. Indicado para ambientes que buscam maior conforto ao usuário.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 83,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Papel Higiênico Folha Simples 12x30m">
-                                    <div class="product-info">
-                                        <span class="badge-marca">HIGIÊNICO</span>
-                                        <h3>Papel Higiênico Folha Simples</h3>
-                                        <span class="product-vol">12 x 30m</span>
-                                        <p>Papel higiênico folha simples em fardo compacto, prático para reposição em banheiros de menor circulação.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 13,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Papel Higiênico Folha Simples 16x30m">
-                                    <div class="product-info">
-                                        <span class="badge-marca">HIGIÊNICO</span>
-                                        <h3>Papel Higiênico Folha Simples</h3>
-                                        <span class="product-vol">16 x 30m</span>
-                                        <p>Papel higiênico folha simples com maior rendimento no pacote, tendo 16 rolos, reduzindo a frequência de compra para reposição de estoque do cliente.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">Indisponível</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Papel Higiênico Folha Dupla 16x30m">
-                                    <div class="product-info">
-                                        <span class="badge-marca">HIGIÊNICO</span>
-                                        <h3>Papel Higiênico Folha Dupla</h3>
-                                        <span class="product-vol">16 x 30m</span>
-                                        <p>Papel higiênico folha dupla, mais macio e absorvente, oferecendo maior conforto no dia a dia. Pacote com 16 rolos de papel higiênico.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">Indisponível</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!-- /papeis higienico -->
-
-                        <!-- TOALHA -->
-                        <div class="sub-aba-painel" id="painel-papeis-toalha">
-                            <div class="produtos-grid">
-
-                                <div class="product-card" data-produto="Papel Toalha Folha Simples Rolão 6x200m">
-                                    <div class="product-info">
-                                        <span class="badge-marca">TOALHA</span>
-                                        <h3>Papel Toalha Folha Simples Rolão</h3>
-                                        <span class="product-vol">6 x 200m</span>
-                                        <p>Papel toalha em rolão folha simples, ideal para cozinhas industriais, banheiros e áreas de grande circulação.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 77,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Papel Toalha Luxo - Folha Autocortante Rolão 6x200m">
-                                    <div class="product-info">
-                                        <span class="badge-marca">TOALHA</span>
-                                        <h3>Papel Toalha Luxo - Folha Autocortante Rolão</h3>
-                                        <span class="product-vol">6 x 200m</span>
-                                        <p>Papel toalha com qualidade superior em rolão com folha autocortante, gera mais economia por ter as folhas marcadas, ideal para cozinhas industriais, banheiros e áreas de grande circulação.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 157,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Papel Toalha Interfolha Comum 5x1000">
-                                    <div class="product-info">
-                                        <span class="badge-marca">TOALHA</span>
-                                        <h3>Papel Toalha Interfolhado Comum</h3>
-                                        <span class="product-vol">5 pacotes x 1000 folhas</span>
-                                        <p>Papel toalha interfolhado linha comum, prático para dispensers, com boa absorção e custo-benefício.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 61,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Papel Toalha Interfolha Luxo 5x1000">
-                                    <div class="product-info">
-                                        <span class="badge-marca">TOALHA</span>
-                                        <h3>Papel Toalha Interfolhado Luxo</h3>
-                                        <span class="product-vol">5 pacotes x 1000 folhas</span>
-                                        <p>Papel toalha interfolhado linha luxo, mais resistente e macio, indicado para ambientes que exigem maior padrão.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 91,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!-- /papeis toalha -->
-
-                        <!-- GUARDANAPO -->
-                        <div class="sub-aba-painel" id="painel-papeis-guardanapo">
-                            <div class="produtos-grid">
-
-                                <div class="product-card" data-produto="Guardanapo de Papel 6000 folhas 10x20cm">
-                                    <div class="product-info">
-                                        <span class="badge-marca">GUARDANAPO</span>
-                                        <h3>Guardanapo de Papel</h3>
-                                        <span class="product-vol">6000 folhas (10cm x 20cm)</span>
-                                        <p>Guardanapo de papel em pacote econômico, tamanho padrão, popular guardanapo de papel caicai. Ideal para restaurantes, lanchonetes e eventos. Necessita dispenser porta guardanapos.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 87,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="product-card" data-produto="Guardanapo de Papel 2000 folhas 14x14cm">
-                                    <div class="product-info">
-                                        <span class="badge-marca">GUARDANAPO</span>
-                                        <h3>Guardanapo de Papel</h3>
-                                        <span class="product-vol">2000 folhas (14cm x 14cm)</span>
-                                        <p>Guardanapo de papel formato quadrado, prático para mesas de refeição em restaurantes, lanchonetes e uso corporativo em geral. Necessita dispenser porta guardanapos.</p>
-                                        <div class="product-footer">
-                                            <span class="preco">R$ 71,90</span>
-                                            <div class="qty-control">
-                                                <button class="qty-btn minus" aria-label="Diminuir">−</button>
-                                                <span class="qty-val">0</span>
-                                                <button class="qty-btn plus" aria-label="Aumentar">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!-- /papeis guardanapo -->
-
-                    </div>
-                </div><!-- /cat-papeis -->
-
+                    </div><!-- /cat-papeis -->
+                </template>
 
                 <!-- ════════════════════════════════════════════
              🧹 CATEGORIA: UTENSÍLIOS (EM BREVE)
@@ -2520,11 +2520,11 @@
                         <input type="text" id="indicadoPor" name="indicadoPor" placeholder="Nome ou WhatsApp de quem indicou">
                     </div>
                 </div>
+                <button class="btn-whatsapp" id="enviarPedidoHome">
+                    <i class="fab fa-whatsapp"></i> Enviar Pedido pelo WhatsApp
+                </button>
+                <p class="form-aviso" id="avisoHome"></p>
             </div>
-            <button class="btn-whatsapp" id="enviarPedidoHome">
-                <i class="fab fa-whatsapp"></i> Enviar Pedido pelo WhatsApp
-            </button>
-            <p class="form-aviso" id="avisoHome"></p>
         </div>
 
         </div>
