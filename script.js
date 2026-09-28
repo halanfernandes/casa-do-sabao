@@ -20,6 +20,7 @@ const VENDEDORES = {
   loja: { nome: "Casa do Sabão (Loja)", whatsapp: NUMERO_CENTRAL },
   arthur: { nome: "Arthur", whatsapp: NUMERO_CENTRAL },
   gisele: { nome: "Gisele", whatsapp: NUMERO_CENTRAL },
+  thais: { nome: "Thais", whatsapp: NUMERO_CENTRAL },
   // adicione novos vendedores aqui, exemplo:
   // joao: { nome: "João", whatsapp: NUMERO_CENTRAL },
 };
