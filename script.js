@@ -24,6 +24,7 @@ const VENDEDORES = {
   jacione_rodrigues: { nome: "Jacione Rodrigues", whatsapp: NUMERO_CENTRAL },
   luiara: { nome: "Luiara", whatsapp: NUMERO_CENTRAL },
   diego_linhares: { nome: "Diego Linhares", whatsapp: NUMERO_CENTRAL },
+  rafael_goetten: { nome: "Rafael Goetten", whatsapp: NUMERO_CENTRAL },
   // adicione novos vendedores aqui, exemplo:
   // joao_costa: { nome: "João Costa", whatsapp: NUMERO_CENTRAL },
 };
